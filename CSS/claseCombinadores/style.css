@@ -1,0 +1,29 @@
+/*¿Cómo funciona el combinador de hermano adyacente?
+El combinador de hermano adyacente permite seleccionar 
+un elemento que sigue a otro en el mismo nivel jerárquico. 
+
+El objetivo es aplicar un estilo específico a los párrafos (<p>) 
+que siguen directamente a un <h2>
+
+  Ejemplo estructura HTML
+  <div>
+    <h2>Soy un H2</h2>
+    <p>Soy una etiqueta de párrafo</p>
+    <h3>Soy un H3</h3>
+    <p>Soy un párrafo</p>
+  </div>
+
+  Ejemplo estructura CSS
+  h2 + p {
+    color: red;
+  }
+*/
+
+
+/*h2 + p { Hermano adyacente
+  color: red;
+}*/
+
+/*h3 ~ p { Hermano general
+  color: green;
+}*/
