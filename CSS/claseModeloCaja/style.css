@@ -1,0 +1,11 @@
+* {
+  margin: 0; /*Resetamos el margen externo del navegador y lo dejamos en 0*/
+  padding: 0; /*Resetamos el margen interno del navegador y lo dejamos en 0*/
+  box-sizing: border-box; /*Esta propiedad quita el scroll horizontal*/
+}
+main {
+  width: 100%; /*Propiedad para asignar 100% del ancho de la pantalla*/
+  height: 500px; /*Propiedad para asignar 500 pixeles de altura al elemento*/
+  border: 10px solid green; /*Propiedad para asignar borde al elemento, 10 pixeles de ancho, solido para que se pueda ver y e color verde*/
+  padding: 20px 35px; /*Propiedad para asignar mangen interno al contenido del elemento*/
+}

@@ -1,0 +1,36 @@
+* { /*Aplicar estilos globales */
+  box-sizing: border-box; /*Ajustar el contenido al ancho especificado  y quita scrollbar horizontal*/
+  margin: 0; /*Quitar margenes externos del navegador*/
+  padding: 0; /*Quitar margenes internos del navegador*/
+}
+h1 { /*Aplicar estilo generales a la etiqueta h1*/
+  color: purple; /*Aplicar color*/
+  font-family: sans-serif; /*Aplicar fuente*/
+  margin-bottom: 10px; /*Aplicar margen externo inferior*/
+}
+.page-title { 
+  font-family: Arial, Helvetica, sans-serif;
+}
+.title {
+  font-size: 18px;
+}
+#main-nav { /*Aplicar estilo directamente a la etiqueta lu de la barra de navegación*/
+  margin-top: 10px; /*Aplicar margen externo superior al elemento*/
+  list-style-type: none;
+}
+
+#main-nav li { /*Aplicar estilos a las etiquetas "li" que están dentro del ID (main-nav)*/
+  display: inline-block; /*(display: inline-block) posiciona los elementos horizontalmente*/
+}
+
+#main-nav a { /*Aplicar estilos a las etiquetas "a" que están dentro del ID (main-nav)*/
+  color: white; /*Aplicar color blanco a las letras*/
+  background: #13a4a4; /*Aplicar color de fondo a las etiquetas*/
+  padding: 5px; /*Aplicar margen interno de 5 pixeles*/
+  border-radius: 5px; /*Redondear las esquinas del borde*/
+  text-decoration: none; /*Quitar el subrayado del elemento*/
+}
+
+#main-nav .contactanos { /*Aplicar estilo directamente al link de contactanos*/
+  background-color: red; /*Aplicar color de fondo al link*/
+}

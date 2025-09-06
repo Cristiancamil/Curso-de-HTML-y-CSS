@@ -1,0 +1,15 @@
+/*
+¿Qué es la herencia en CSS?
+La herencia en CSS se usa para transmitir estilos automáticamente de un elemento HTML a sus elementos hijos.
+- Propiedades herederas comunes: tamaño de fuente (font-size), tipo de fuente (font-family), color de texto (color).
+- Propiedades no herederas: márgenes (margin), posición (position), anchura (width).
+*/
+
+html {
+  font-size: 75%; /*Propiedad para definir tamaño de fuente*/
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /*Propiedad para asignar tipo de fuente*/
+}
+
+h1 {
+  font-size: inherit; /*Hereda el tamaño de fuente del padre más cercano con tamaño definido en este caso html*/
+}
