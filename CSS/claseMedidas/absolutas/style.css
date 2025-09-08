@@ -1,0 +1,16 @@
+/*MEDIDAS RELATIVAS
+  Porcentajes (%): Ajustan su tamaño en relación al contenedor padre.
+  Em: Basado en el tamaño de fuente del elemento padre.
+  Rem: Basado en el tamaño de fuente del elemento raíz del documento HTML.
+  Viewport width (vw) y viewport height (vh): Miden el ancho y alto del viewport 
+  (la ventana visible de la página).
+*/
+* {
+  box-sizing: border-box; /*Evita que aparexca el scrollbar horizontal*/
+}
+
+main {
+  background-color: red;
+  width: 100%;
+  height: 500px;
+}

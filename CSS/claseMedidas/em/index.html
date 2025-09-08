@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" description="En esta clase estamos trabajando con la medida em">
+  <meta name="robots" content="index,follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!--Crear un formulario-->
+  <form action="" class="main-form">
+    <div>
+      <!--Inputs que tiene el formulario-->
+      <label for="nombre"><!--Campo para nombre-->
+        <span>Nombre:</span>
+        <input id="nombre" name="nombre" type="text" placeholder="Ej. Cristian" autocomplete="name">
+      </label>
+      <label for="apellido"><!--Campo para apellido-->
+        <span>Apellido:</span>
+        <input id="apellido" name="apellido" type="text" placeholder="Ej. Lopez Martinez" autocomplete="family-name">
+      </label>
+    </div>
+
+    <div>
+      <label for="fecha-nacimiento"><!--Campo para la fecha de nacimiento-->
+        <span>Nacimiento:</span>
+        <input id="fecha-nacimiento" name="fecha-nacimiento" type="date" autocomplete="bday">
+      </label>
+      <label for="email"><!--Campo para la fecha de nacimiento-->
+        <span>Correo:</span>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+      </label>
+    </div>
+
+    <div>
+      <label for="pais"><!--Campo para el pais-->
+        <span>Pais:</span>
+        <input id="pais" name="pais" type="text" autocomplete="country" list="lista-pais" required>
+      </label>
+
+      <!--Crear una lista desplegable-->
+      <datalist id="lista-pais">
+        <option value="Colombia"></option>
+        <option value="Estados Unidos de America"></option>
+        <option value="Mexico"></option>
+        <option value="Cánada"></option>
+        <option value="Brazil"></option>
+      </datalist>
+
+      <label for="codigo-postal"><!--Campo para el pais-->
+        <span>Código Postal:</span>
+        <input id="codigo-postal" name="codigo-postal" type="text" autocomplete="postal-code" required>
+      </label>
+    </div>
+
+    <!--Boton para envíar formularios-->
+    <input type="submit" class="botton-send">
+  </form>
+</body>
+</html>

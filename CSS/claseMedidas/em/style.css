@@ -1,0 +1,42 @@
+* {
+  margin: 0; /*Quitar margen externo*/
+  padding: 0; /*Quitar margen interno*/
+  box-sizing: border-box; /*Evitar el scroll lateral*/
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif; /*Tipo de fuente*/
+  font-size: 16px;
+}
+
+/*
+  La medida "em" es un acronimo de elemento y toma el tamaño fuente del elemento padre.
+  1em = font-size del elemento padre.
+  Si el elemento padre tiene un (font-size: 16px;), entonces 1em = 16px.
+  Si el elemento padre tiene un (font-size: 16px;), entonces 2em = (2 * 16px) = 32px.
+*/
+.text-container { 
+  font-size: 1.5em;
+}
+
+.main-form {
+  color: white;
+  border: 3px black solid;
+  border-radius: 5px;
+  background-color: #292928;
+  margin: 10px;
+  padding: 30px;
+  width: 50%;
+}
+
+.main-form div {
+  margin-bottom: 1.5em;
+}
+
+.main-form .botton-send {
+  background-color: green;
+  color: white;
+  border: 3px black solid;
+  border-radius: 5px;
+  font-size: 1.3em;
+}
