@@ -1,0 +1,24 @@
+* { /* Selector universal */
+  box-sizing: border-box; /*Border-box evita que el contenido sobresalga del contenedor*/
+  margin: 0; /*Resetamos los margenes externos*/
+  padding: 0; /*Resetamos los margenes internos*/
+}
+html {
+  font-size: 62.5%; /* Definimos el tamaño de la funte que será de 10 pixeles */
+}
+
+main {
+  width: 100vw; /*vw: Un vw es igual al 1% del ancho de la ventana gráfica.*/
+  height: 100vh; /*vh: Un vh es igual al 1% de la altura de la ventana gráfica.*/
+  background-color: purple;
+}
+
+/*Para usar el min-width y el max-width se debe tener un width base con valor en porcentaje*/
+section {
+  width: 80%; /*El ancho ocupará el 80% de la ventana gráfica*/
+  min-width: 320px; /*indicamos que el tamaño minimo del <section> no puede bajar de 320 pixeles*/
+  max-width: 500px; /*indicamos que el tamaño maximo del <section> no puede superar los 500 pixeles*/
+  min-height: 500px; /*Indicamos que tendrá una altura minima 500 pixeles pero puede crecer lo que necesite el elemento*/
+  background-color: red;
+  margin: 0 auto; /*0 auto: Agrega 0 pixeles arriba y abajo, y ajusta automáticamente el margen en los lados*/
+}

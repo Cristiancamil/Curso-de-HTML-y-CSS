@@ -1,0 +1,86 @@
+¿Cómo definir medidas en CSS usando min, max, viewport width y viewport height?
+Definir las medidas y tamaños de los elementos que construimos en una página web es 
+fundamental para asegurar una experiencia de usuario adecuada. Este enfoque permite 
+que las interfaces sean más fluidas y adaptables a distintos dispositivos. 
+En esta clase, exploraremos cómo el uso conjunto de las unidades de medida 
+min, max, viewport width (vw), y viewport height (vh) nos ayuda a lograr un diseño 
+flexible y responsivo.
+
+¿Qué es el viewport width (vw) y viewport height (vh)?
+viewport width (vw) y viewport height (vh) son unidades de medida relativas 
+al tamaño de la ventana gráfica del navegador:
+
+vw: Un vw es igual al 1% del ancho de la ventana gráfica.
+vh: Un vh es igual al 1% de la altura de la ventana gráfica.
+Estas unidades son increíblemente útiles para hacer que los elementos 
+ocupen un porcentaje específico del espacio visible del navegador, independientemente 
+del tamaño de la ventana.
+
+Aplicación práctica en estilos CSS básicos
+Para comenzar a entender estas medidas, implementamos un diseño básico en HTML y CSS:
+
+<main>
+    <section>
+        <!-- Contenido adicional -->
+    </section>
+</main>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: purple;
+}
+
+section {
+    width: 80%;
+    height: 500px;
+    background-color: red;
+    margin: 0 auto;
+}
+Al utilizar 100vw y 100vh en el contenedor principal (main), nos aseguramos de que ocupe 
+todo el viewport independientemente del tamaño del dispositivo.
+
+Explorando min-width, max-width, min-height y max-height
+Las propiedades min-width, max-width, min-height, y max-height permiten restringir 
+el tamaño mínimo y máximo que puede alcanzar un elemento. Esto ayuda a controlar el 
+crecimiento y contracción del contenido de manera ordenada dentro de las restricciones 
+de diseño.
+
+Ejemplo de implementación para un <section>:
+section {
+    width: 80%;
+    min-width: 320px;
+    max-width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
+Al usar min-width: 320px; y max-width: 500px;, indicamos que el tamaño del ancho del 
+<section> debe comenzar desde 320 píxeles y no puede crecer más allá de 500 píxeles. 
+Este rango asegura flexibilidad sin exceder límites prácticos.
+
+Solución al problema de overflow en contenido
+El overflow, o desbordamiento, ocurre cuando el tamaño del contenido excede el espacio 
+disponible en el contenedor. Esto es común cuando se define una altura fija y el contenido 
+es dinámico.
+
+Uso de min-height en lugar de una altura fija
+Para resolver el desbordamiento podemos utilizar min-height:
+
+section {
+    min-height: 500px;
+    /* Otros estilos */
+}
+Al utilizar min-height para el contenedor, permitimos que crezca más allá de sus 500 píxeles
+originales si el contenido lo requiere, proporcionando espacio adicional.
+
+Resumen
+Implementar unidades de medida relativas como vw y vh, junto con los límites de min y max, 
+permite crear diseños web más adaptables y responsivos. Entender múltiples situaciones de 
+uso y cómo manejarlas garantiza una experiencia de usuario óptima en dispositivos de cualquier 
+tamaño. No olvides experimentar y practicar con estos conceptos para integrar de manera 
+efectiva estos principios en tus proyectos web. ¡Sigue aprendiendo y creando!
