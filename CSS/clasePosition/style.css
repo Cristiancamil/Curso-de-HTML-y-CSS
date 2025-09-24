@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+
+
+.parent {
+  width: 70%; /*Indicamos que tomara un porcentaje de la ventana gráfica*/
+  min-width: 40rem; /*Asignamos un tamaño minimo de 40rem no importa cuan pequeña sea la pantalla*/
+  max-width: 50rem; /*Asignamos un tamaño maximo de 50rem no importa que tan grande sea lapantalla no seguirá creciendo*/
+  margin: 1rem auto; /*Asignamos 1rem de margen arriba y debajo, a los lados se ajustará automaticamente quedando centrado*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* background-color: red; */
+}
+.box {
+  border: 1px solid black;
+  border-radius: 1rem;
+  width: 8rem; /*Asignamos un ancho fijo de 8rem = 80px, 1rem = 10px*/
+  height: 4rem; /*Asignamos un alto fijo de 4rem = 40px*/
+  font-size: 2rem; /*Asignamos un tamaño a la fuente de la letra*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: purple;
+}
+#two {
+  background-color: green;
+  position: relative; /*Asignamos la propiedad relativa por si queremos mover el elemento que tiene este ID*/
+}
+
+
+main {
+  position: relative; /*Asignamos una posición relativa por que vamos aplicar un margen de altura a este contenedor*/
+  top: 7vh; /*Asignamos un margen superior de 7% de la ventana gráfica*/
+  width: 70%; /*Asignamos un ancho relativo al 70% de la ventana gráfica*/
+  min-width: 40rem; /*Asignamos un ancho minimo al contenedor no puede minimizar más su tamaño.*/
+  max-width: 50rem; /*Asignamos un ancho maximo al contenedor no puede crecer más allá de este tamaño*/
+  margin: 0 auto; /*Indicamos que se ajuste el contenedor, 0 pexeles arriba y abajo, automaticamente se ajusten los margenes laterales par que se centre el contenido*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: aquamarine; */
+}
+.section-1 {
+  border: 1px solid black; /*Asignamos borde solido para que se vea de 1 pixel y color negro*/
+  border-radius: 1rem; /*Redondeamos las puntas del contenedor a 1rem = 10px*/
+  width: 22rem; /*Ajustamos un ancho de 22rem = 220px*/
+  height: 5rem; /*Ajustamos un alto de 50px*/
+  position: absolute; /*Asignamos una posición absoluta para superponerla sobre otros elementos*/
+  top: -2.5rem; /*Agragamos un margen inferior de 17rem = 170px para subior el elemento*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+}
+.section-2 {
+  border: 1px solid black; /*Asignamos un borde solido para que se vea de 1px y color negro*/
+  border-radius: 4rem; /*Redondeamos las esquinas del contenedor*/
+  width: 40rem; /*Asignamos un ancho fijo de 40rem = 400px*/
+  min-height: 20rem; /*Asignamos un alto minimo de 20rem = 200px*/
+  padding: 1rem 2rem; /*Asignamos 1rem de margenes superior e inferior y 2rem de margenes laterales*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: gainsboro;
+}
+#parrafo-1 {
+  font-size: 1.6rem;
+}
+#parrafo-2 {
+  font-size: 1.6rem;
+}

@@ -1,0 +1,85 @@
+¿Qué es position en CSS y por qué es importante?
+Position es una propiedad fundamental en CSS que nos permite controlar 
+la ubicación de los elementos dentro de una página web. Comprender cómo 
+funciona esta propiedad es crucial para manipular el diseño de nuestros 
+proyectos de manera efectiva. Todos los elementos HTML vienen con     
+"position: static" por defecto, lo que significa que se mantienen 
+en el lugar asignado originalmente en el flujo del documento, y no 
+se moverán aunque hagamos scroll en la página.
+
+Existen otras propiedades de position, como absolute, relative, fixed 
+y sticky, que ofrecen comportamientos distintos y nos permiten crear 
+diseños más dinámicos. Explorar estas propiedades y aprender a utilizarlas 
+nos permite agregar interactividad y estilo a nuestros diseños.
+
+
+¿Cómo configurar y visualizar posiciones en CSS?
+Antes de aplicar propiedades de position, es útil entender cómo se estructuran 
+nuestros documentos HTML y CSS. En un proyecto básico como este:
+
+<div class="parent">
+  <div class="box" id="1">1</div>
+  <div class="box" id="2">2</div>
+  <div class="box" id="3">3</div>
+  <div class="box" id="4">4</div>
+</div>
+
+
+Se puede agregar estilos con CSS para ver claramente los cambios de posición:
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.parent {
+  border: 2px dotted black;
+  display: inline-block;
+}
+
+.box {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+#2 {
+  background-color: green;
+}
+
+Con esta configuración básica, todos los elementos se presentan en una línea, 
+con el segundo div destacado en verde. A partir de aquí, puedes jugar con   -
+diferentes propiedades position.
+
+¿Qué diferencias hay entre static, absolute y relative?
+
+* static: Es la posición por defecto de todos los elementos. No permite modificar 
+  la posición del elemento en relación a su posición original en el documento.
+
+* absolute: Esta propiedad permite a un elemento posicionarse respecto al contenedor 
+  posicionado más cercano, lo que significa que puede salir del flujo normal del   -
+  documento y aparecer sobre otros elementos. Por ejemplo:
+
+  #2 {
+    position: absolute; /*En este caso, el div con id 2 se posiciona sobre los demás.*/
+  }
+
+* relative: Permite desplazar un elemento desde su posición original sin alterar 
+  el flujo del documento. Puedes especificar el desplazamiento usando propiedades 
+  como top, bottom, left y right. Ejemplo:
+
+  #2 {
+    position: relative; /*Permite que se pueda mover el div con id 2*/
+    bottom: 15px; /*Esto moverá el div hacia arriba 15 píxeles*/
+  }
+
+¿Cómo usar el conocimiento de position para resolver un desafío?
+Para practicar el uso de estas propiedades, intenta replicar un diseño simple donde 
+un contenedor aparece sobre otro. 
+Usa position: absolute o position: relative basado en lo que hemos visto.
+
+Este tipo de desafíos son fantásticos para fortalecer tu comprensión del 
+posicionamiento en CSS y habilitarte para crear diseños más complejos y 
+visualmente atractivos. 
